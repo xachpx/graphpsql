@@ -1,0 +1,20 @@
+schema {
+  query: Query
+}
+
+type Comment {
+  id: Int
+  content: String
+  posts: [Post]
+}
+
+type Post {
+  title: String
+  content: String
+  comment: [Comment]
+}
+
+type Query {
+  Post(id: Int, title: String): [Post]
+  comments: [Comment]
+}
