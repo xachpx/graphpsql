@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "graphQL + psql",
   "author": "hadi akbar<hadixakbar@gmail.com>",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "babel-node server",
+    "start": "./node_modules/.bin/babel-node server.js",
     "update-schema": "babel-node ./scripts/updateSchema.js"
   },
   "keywords": [
